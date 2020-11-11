@@ -1,0 +1,67 @@
+$light-color : #ffffff;
+$dark-color : #000000;
+$second-color : #ff5f03;
+$third-color : #fcca04;
+$border-radius : 50%;
+$margin-spacing-section : 100px;
+$font-family : "Almendra", serif;
+$font-size : 50px;
+
+body {
+    font-family : $font-family;
+}
+
+@mixin ring ($size, $color,) {
+    width: $size;
+    height: $size;
+    border: $size/14 solid $color ;
+    border-radius: $border-radius;
+    box-shadow: inset $size/30 $size/30 $size/30 darken($color, 5%), $size/30 $size/30 $size/30 darken($color, 10%);
+}
+
+.orange-ring {
+    @include ring (60px, $second-color);
+}
+
+.yellow-ring {
+    @include ring (180px, $third-color);
+}
+
+h1, h2 {
+    font-size: $font-size;
+    margin: 0px $margin-spacing-section/4;
+}
+
+.my-precious {
+    display: flex;
+    justify-content: center;
+    margin: $margin-spacing-section 0px;
+}
+
+.the-one-ring,
+.black-rings {
+    @extend .my-precious;
+    align-items: center;
+}
+
+.please-find-it {
+    @extend .my-precious;
+}
+
+@for $i from 1 through 6 {
+    .black-ring-#{$i} {
+        @include ring (40px+($i*5px), 3px+$i, $dark-color, $border-radius, 2px);
+        margin-left: -(10px*$i);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding : $margin-spacing-section/5 $margin-spacing-section/2;
+    background-color: $second-color;
+    color: $light-color;
+    > section > div {
+        margin : 10px 0px;
+    }
+}

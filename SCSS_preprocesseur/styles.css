@@ -1,0 +1,101 @@
+body {
+    font-family: "Almendra", serif;
+  }
+  
+  .orange-ring {
+    width: 60px;
+    height: 60px;
+    border: 4.2857142857px solid #ff5f03;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 2px #e95500, 2px 2px 2px #cf4c00;
+  }
+  
+  .yellow-ring {
+    width: 180px;
+    height: 180px;
+    border: 12.8571428571px solid #fcca04;
+    border-radius: 50%;
+    box-shadow: inset 6px 6px 6px #e4b603, 6px 6px 6px #cba202;
+  }
+  
+  h1, h2 {
+    font-size: 50px;
+    margin: 0px 25px;
+  }
+  
+  .my-precious, .please-find-it, .the-one-ring,
+  .black-rings {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+  
+  .the-one-ring,
+  .black-rings {
+    align-items: center;
+  }
+  
+  .black-ring-1 {
+    width: 45px;
+    height: 45px;
+    border: 3.2142857143px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 1.5px 1.5px 1.5px black, 1.5px 1.5px 1.5px black;
+    margin-left: -5px;
+  }
+  
+  .black-ring-2 {
+    width: 50px;
+    height: 50px;
+    border: 3.5714285714px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 1.6666666667px 1.6666666667px 1.6666666667px black, 1.6666666667px 1.6666666667px 1.6666666667px black;
+    margin-left: -10px;
+  }
+  
+  .black-ring-3 {
+    width: 55px;
+    height: 55px;
+    border: 3.9285714286px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 1.8333333333px 1.8333333333px 1.8333333333px black, 1.8333333333px 1.8333333333px 1.8333333333px black;
+    margin-left: -15px;
+  }
+  
+  .black-ring-4 {
+    width: 60px;
+    height: 60px;
+    border: 4.2857142857px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 2px black, 2px 2px 2px black;
+    margin-left: -20px;
+  }
+  
+  .black-ring-5 {
+    width: 65px;
+    height: 65px;
+    border: 4.6428571429px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 2.1666666667px 2.1666666667px 2.1666666667px black, 2.1666666667px 2.1666666667px 2.1666666667px black;
+    margin-left: -25px;
+  }
+  
+  .black-ring-6 {
+    width: 70px;
+    height: 70px;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    box-shadow: inset 2.3333333333px 2.3333333333px 2.3333333333px black, 2.3333333333px 2.3333333333px 2.3333333333px black;
+    margin-left: -30px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ff5f03;
+    color: #ffffff;
+  }
+  footer > section > div {
+    margin: 10px 0px;
+  }
